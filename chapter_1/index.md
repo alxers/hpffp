@@ -193,34 +193,34 @@ reduced to a normal form or if they diverge.
 Evaluate (that is, beta reduce) each of the following
 expressions to normal form.
 
-1. (λabc.cba)zz(λwv.w)
-λa(λb(λc.cba)zz(λwv.w)
-λb(λc.cbz)z(λwv.w)
-(λc.czz)(λwv.w)
-(λwv.w)zz
-(λv.z)z
-z
-2. (λx.λy.xyy)(λa.a)b
-(λy(λa.a)yy)(b)
-(λa.a)bb
-bb
-3. (λy.y)(λx.xx)(λz.zq)
-(λx.xx)(λz.zq)
-(λz.zq)(λz.zq)
-(λz.zq)q
-qq
-4. (λz.z)(λz.zz)(λz.zy)
-Hint: alpha equivalence.
-(λz.zz)(λz.zy)
-(λz.zy)(λz.zy)
-(λz.zy)y
-yy
-5. (λx.λy.xyy)(λy.y)y
-(λy.(λy.y)yy)y
-(λy.y)yy
-yy
-6. (λa.aa)(λb.ba)c
-((λb.ba)(λb.ba))c
-((λb.ba)a)c
-aac
-7. (λxyz.xz(yz))(λx.z)(λx.a)
+1. (λabc.cba)zz(λwv.w)   
+λa(λb(λc.cba)zz(λwv.w)   
+λb(λc.cbz)z(λwv.w)   
+(λc.czz)(λwv.w)   
+(λwv.w)zz   
+(λv.z)z   
+z   
+2. (λx.λy.xyy)(λa.a)b   
+(λy(λa.a)yy)(b)   
+(λa.a)bb   
+bb   
+3. (λy.y)(λx.xx)(λz.zq)   
+(λx.xx)(λz.zq)   
+(λz.zq)(λz.zq)   
+(λz.zq)q   
+qq   
+4. (λz.z)(λz.zz)(λz.zy)   
+Hint: alpha equivalence.   
+(λz.zz)(λz.zy)   
+(λz.zy)(λz.zy)   
+(λz.zy)y   
+yy   
+5. (λx.λy.xyy)(λy.y)y   
+(λy.(λy.y)yy)y   
+(λy.y)yy   
+yy   
+6. (λa.aa)(λb.ba)c   
+((λb.ba)(λb.ba))c   
+((λb.ba)a)c   
+aac   
+7. (λxyz.xz(yz))(λx.z)(λx.a)   
