@@ -224,3 +224,12 @@ yy
 ((λb.ba)a)c   
 aac   
 7. (λxyz.xz(yz))(λx.z)(λx.a)   
+(λx(λy(λz.xz(yz)))(λx.z)(λx.a)   
+* rename (λx.z) to (λx.z1), because it's a different z   
+x:= (λx.z1)   
+(λy(λz.(λx.z1)(z)(yz)))(λx.a)   
+(λz.(λx.z1)(z)((λx.a)z))
+-> (λx.z1)z -> z1   
+(λz.z1((λx.a)z))
+-> (λx.a)z -> a   
+λz.z1a   
