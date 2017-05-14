@@ -222,7 +222,7 @@ yy
 6. (λa.aa)(λb.ba)c   
 ((λb.ba)(λb.ba))c   
 ((λb.ba)a)c   
-aac   
+aac       
 7. (λxyz.xz(yz))(λx.z)(λx.a)   
 (λx(λy(λz.xz(yz)))(λx.z)(λx.a)   
   rename (λx.z) to (λx.z1), because it's a different z   
