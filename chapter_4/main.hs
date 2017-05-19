@@ -5,7 +5,6 @@ isPalindrome x =
   x == reverse x
 
 
-
 myAbs :: Integer -> Integer
 myAbs x =
   if x < 0 then negate x else x
