@@ -6,5 +6,5 @@ module Chapter5 where
 -- head :: [a] -> a
 -- (<) :: Ord a => a -> a -> Bool
 
-addStuff :: Integer -> Integer -> Integer
-addStuff a b = a + b + 5
+-- type of f is a -> a -> a -> and the type of x is Char
+-- then the type of f x is Char -> Char -> Char
