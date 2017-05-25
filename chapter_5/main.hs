@@ -6,8 +6,20 @@ module Chapter5 where
 -- head :: [a] -> a
 -- (<) :: Ord a => a -> a -> Bool
 
--- type of f is a -> a -> a -> and the type of x is Char
+-- 1) type of f is a -> a -> a -> and the type of x is Char
 -- then the type of f x is Char -> Char -> Char
 
--- type of h is g is a -> b -> c -> b
+-- 2) type of g is a -> b -> c -> b
 -- then the type of g 0 'c' "woot" is Char
+
+-- 3) type of h is (Num a, Num b) => a -> b -> b
+-- then the type of h 1.0 2 is Num b => b (because :t 2 is Num t => t)
+
+-- 4) type of h is (Num a, Num b) => a -> b -> b
+-- then the type of h 1 (5.5 :: Double) is Double
+
+-- 5) type of h is (Num a, Num b) => a -> b -> b
+-- then the type of h 1 (5.5 :: Double) is Double
+
+-- 6) type of j is (Ord a, Eq b) => a -> b -> a
+-- then the type of j "key" "has" is [Char] (:t "has" [Char])
