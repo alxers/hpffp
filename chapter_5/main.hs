@@ -23,3 +23,6 @@ module Chapter5 where
 
 -- 6) type of j is (Ord a, Eq b) => a -> b -> a
 -- then the type of j "key" "has" is [Char] (:t "has" [Char])
+
+-- 7) type of j is (Ord a, Eq b) => a -> b -> a
+-- then the type of j "key" is Eq b => b -> [Char]
