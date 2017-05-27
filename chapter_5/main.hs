@@ -18,11 +18,12 @@ module Chapter5 where
 -- 4) type of h is (Num a, Num b) => a -> b -> b
 -- then the type of h 1 (5.5 :: Double) is Double
 
--- 5) type of h is (Num a, Num b) => a -> b -> b
--- then the type of h 1 (5.5 :: Double) is Double
-
--- 6) type of j is (Ord a, Eq b) => a -> b -> a
+-- 5) type of j is (Ord a, Eq b) => a -> b -> a
 -- then the type of j "key" "has" is [Char] (:t "has" [Char])
 
--- 7) type of j is (Ord a, Eq b) => a -> b -> a
+-- 6) type of j is (Ord a, Eq b) => a -> b -> a
 -- then the type of j "key" is Eq b => b -> [Char]
+
+-- 7) type of k is (Ord a, Num b) => a -> b -> a
+-- then the type of k 1 2 is: ?
+-- the answer is (Num a, Ord b) => a
