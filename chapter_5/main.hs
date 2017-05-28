@@ -25,5 +25,12 @@ module Chapter5 where
 -- then the type of j "key" is Eq b => b -> [Char]
 
 -- 7) type of k is (Ord a, Num b) => a -> b -> a
--- then the type of k 1 2 is: ?
--- the answer is (Num a, Ord b) => a
+-- then the type of k 1 2 is Num a => a (similar to question 5), or Ord a => a, not correct (why ???)
+-- the correct answer is (Num a, Ord b) => a
+
+-- 8) type of k is (Ord a, Num b) => a -> b -> a
+-- then the type of k 1 2 is the same as in 7, because 'a' is returned, not 'b'
+
+-- 9) type of k is (Ord a, Num b) => a -> b -> a
+-- then the type of k (1 :: Integer) 2 is Integer (:t (1 :: Integer))
+
