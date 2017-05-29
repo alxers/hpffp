@@ -34,3 +34,14 @@ module Chapter5 where
 -- 9) type of k is (Ord a, Num b) => a -> b -> a
 -- then the type of k (1 :: Integer) 2 is Integer (:t (1 :: Integer))
 
+-- Polymorphism
+
+-- 2) let m :: a -> a -> a
+-- m a b = a
+-- m a b = b
+-- is the only possible implementations
+-- when given different types error will be raised
+-- f.e. m 1 "2" => error
+
+-- 3) let m :: a -> b -> b; m a b = b
+-- only one implementation, behaviour doesn't change when type of 'a' or 'b' changes
