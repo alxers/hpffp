@@ -74,3 +74,10 @@ module Chapter5 where
 -- 5) (<) :: Ord a => a -> a -> Bool
 -- myAlph x = x < 'z'
 -- It changes to myAlph :: Char -> Bool
+
+-- Chapter Exercises
+
+-- 1) A value of type [a] is a list whose elements are all of some type a
+-- 2) A function of type [[a]] -> [a] could take a list of strings as an argument
+-- 3) A function of type [a] -> Int -> a returns one element of type a from a list
+-- 4) A function of type (a,b) -> a takes a tuple argument and returns the first value
