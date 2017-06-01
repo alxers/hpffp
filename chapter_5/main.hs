@@ -81,3 +81,23 @@ module Chapter5 where
 -- 2) A function of type [[a]] -> [a] could take a list of strings as an argument
 -- 3) A function of type [a] -> Int -> a returns one element of type a from a list
 -- 4) A function of type (a,b) -> a takes a tuple argument and returns the first value
+
+-- 1.
+-- a) (* 9) 6 type is Num a => a
+-- b) head [(0, "doge"), (1, "kitten")] type is Num a => (a, [Char])
+-- c) head [(0 :: Integer, "doge"), (1, "kitten")] type is (Integer, [Char])
+-- d) if False then True else False type is Boolean (correction: Bool)
+-- e) length [1,2,3,4,5] type is Int
+-- f) (length [1, 2, 3, 4]) > (length "TACOCAT") type is Bool
+
+-- 2. x = 5; y = x + 5; w = y * 10;
+-- type of w is Num a => a
+
+-- 3. x = 5; y = x + 5; z y = y * 10
+-- type of z is Num a => a -> a
+
+-- 4. x = 5; y = x + 5; f = 4 / y
+-- type of f is Fractional a => a
+
+-- 5. x = "Julie"; y = " <3 "; z = "Haskell"; f = x ++ y ++ z
+-- type of z is [Char]
