@@ -101,3 +101,15 @@ module Chapter5 where
 
 -- 5. x = "Julie"; y = " <3 "; z = "Haskell"; f = x ++ y ++ z
 -- type of z is [Char]
+
+-- Determine the type
+
+-- 1) bigNum = (^) 5 $ 10; wahoo = bigNum $ 10
+-- won't compile, the same as 9765625 $ 10
+
+-- 2) x = print; z = x "hello world"
+-- compiles
+
+-- 3) a = (+); b = 5; c = a b 10; d = a c 200
+
+-- 4) won't compile
