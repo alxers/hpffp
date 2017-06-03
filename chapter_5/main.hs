@@ -113,3 +113,20 @@ module Chapter5 where
 -- 3) a = (+); b = 5; c = a b 10; d = a c 200
 
 -- 4) won't compile
+
+-- Type variable or specific type constructor
+
+-- 2) f :: zed -> Zed -> Blah
+-- zed - fully polymorphic
+-- Zed - concrete
+-- Blah - concrete
+
+-- 3) f :: Enum b => a -> b -> C
+-- a - fully polymorphic
+-- b - constrained polymorphic
+-- C - concrete
+
+-- 4) f :: f -> g -> C
+-- f - fully p.
+-- g - fully p.
+-- C - concrete
