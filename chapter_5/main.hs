@@ -130,3 +130,7 @@ module Chapter5 where
 -- f - fully p.
 -- g - fully p.
 -- C - concrete
+
+-- Write a type signature
+-- functionH :: x -> x (correct answer functionH :: [t] -> t)
+-- functionH (x:_) = x
