@@ -132,5 +132,11 @@ module Chapter5 where
 -- C - concrete
 
 -- Write a type signature
--- functionH :: x -> x (correct answer functionH :: [t] -> t)
+-- 1) functionH :: x -> x (correct answer functionH :: [t] -> t)
 -- functionH (x:_) = x
+
+-- 2) functionC :: x -> y -> Boolean (correct answer functionC :: Ord a => a -> a -> Bool)
+-- functionC x y = if (x > y) then True else False
+
+-- 3) functionS :: (x, y) -> y
+-- functionS (x, y) = y
