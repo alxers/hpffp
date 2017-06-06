@@ -140,3 +140,30 @@ module Chapter5 where
 
 -- 3) functionS :: (x, y) -> y
 -- functionS (x, y) = y
+
+-- Given a type, write the function
+
+-- 1) i :: a -> a
+-- i a = a
+
+-- 2) c :: a -> b -> a
+-- c a b = a
+
+-- 3) c'' :: b -> a -> b
+-- c'' b a = b
+-- same as 'c' above
+
+-- 4) c' :: a -> b -> b
+-- c' a b = b
+
+-- 5) r :: [a] -> [a]
+-- r = undefined ?
+
+-- 6) co :: (b -> c) -> (a -> b) -> (a -> c)
+-- co ?
+
+-- 7) a :: (a -> c) -> a -> a
+-- a = undefined ?
+
+-- 8) a' :: (a -> b) -> a -> b
+-- a' = undefined ?
