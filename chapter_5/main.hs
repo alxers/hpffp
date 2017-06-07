@@ -167,3 +167,14 @@ module Chapter5 where
 
 -- 8) a' :: (a -> b) -> a -> b
 -- a' = undefined ?
+
+-- Fix it
+fstString :: [Char] -> [Char]
+fstString x = x ++ " in the rain"
+
+sndString :: [Char] -> [Char]
+sndString x = x ++ " over the rainbow"
+
+sing = if (x > y) then fstString x or sndString y
+    where x = "Singin"
+          y = "Somewhere"
