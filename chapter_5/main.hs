@@ -219,3 +219,4 @@ sing = if (x > y) then fstString x or sndString y
 
 -- 4) munge :: (x -> y) -> (y -> (w, z)) -> x -> w
 -- munge = ???
+-- (correct answer: something like munge xy ywz x = fst $ ywz $ xy x)
