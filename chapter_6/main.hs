@@ -11,3 +11,6 @@ module Chapter6 where
 -- doesn't work, diffent types
 -- 4) (5 + 3) > (3 + 6)
 -- works fine
+
+x :: Int -> Int
+x blah = blah + 20
