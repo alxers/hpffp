@@ -11,3 +11,10 @@ module Chapter6 where
 -- doesn't work, diffent types
 -- 4) (5 + 3) > (3 + 6)
 -- works fine
+
+
+--data Trivial =
+--  Trivial'
+
+--instance Eq Trivial where
+--  Trivial' == Trivial' = True
