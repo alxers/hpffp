@@ -13,8 +13,8 @@ module Chapter6 where
 -- works fine
 
 
---data Trivial =
---  Trivial'
+data TisAnInteger =
+    TisAn Integer
 
---instance Eq Trivial where
---  Trivial' == Trivial' = True
+instance Eq TisAnInteger where
+    (==) (TisAn x) (TisAn x') = x == x'
