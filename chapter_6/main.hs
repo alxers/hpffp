@@ -12,9 +12,16 @@ module Chapter6 where
 -- 4) (5 + 3) > (3 + 6)
 -- works fine
 
-
+--1
 data TisAnInteger =
     TisAn Integer
 
 instance Eq TisAnInteger where
     (==) (TisAn x) (TisAn x') = x == x'
+
+--2
+data TwoIntegers =
+    Two Integer Integer
+
+instance Eq TwoIntegers where
+    (==) (Two x y) (Two x' y') = (x == x') && (y == y')
