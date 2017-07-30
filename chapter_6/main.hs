@@ -25,3 +25,12 @@ data TwoIntegers =
 
 instance Eq TwoIntegers where
     (==) (Two x y) (Two x' y') = (x == x') && (y == y')
+
+--3
+data StringOrInt =
+    TisAnInt   Int
+  | TisAString String
+
+instance Eq StringOrInt where
+    (==) (TisAnInt x) (TisAnInt x') = x == x'
+    (==) (TisAString y) (TisAString y') = y == y'
