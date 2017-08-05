@@ -34,3 +34,15 @@ data StringOrInt =
 instance Eq StringOrInt where
     (==) (TisAnInt x) (TisAnInt x') = x == x'
     (==) (TisAString y) (TisAString y') = y == y'
+
+data Pair a =
+    Pair a a
+
+instance Eq a => Eq (Pair a) where
+    (==) (Pair a a') (Pair b b') = (a == b) && (a' == b')
+
+data Tuple a b =
+    Tuple a b
+
+instance (Eq a, Eq b) => Eq (Tuple a b) where
+    (==) (Tuple a b) (Tuple a' b') = (a == a') && (b == b')
