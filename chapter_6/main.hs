@@ -46,3 +46,19 @@ data Tuple a b =
 
 instance (Eq a, Eq b) => Eq (Tuple a b) where
     (==) (Tuple a b) (Tuple a' b') = (a == a') && (b == b')
+
+data Which a =
+    ThisOne a
+  | ThatOne a
+
+instance Eq a => Eq (Which a) where
+    (==) (ThisOne a) (ThisOne a') = a == a'
+    (==) (ThatOne b) (ThatOne b') = b == b'
+
+data EitherOr a b =
+    Hello a
+  | Goodbye b
+
+-- instance (Eq a, Eq b) => Eq (EitherOr a b) where
+--     (==) (Hello a) (Hello b) = a == b
+--     (==) (Goodbye a) (Goodbye b) = a == b
