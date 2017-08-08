@@ -62,3 +62,6 @@ data EitherOr a b =
 -- instance (Eq a, Eq b) => Eq (EitherOr a b) where
 --     (==) (Hello a) (Hello b) = a == b
 --     (==) (Goodbye a) (Goodbye b) = a == b
+
+-- 1. The Eq class
+-- c) makes equality tests possible
