@@ -65,3 +65,5 @@ data EitherOr a b =
 
 -- 1. The Eq class
 -- c) makes equality tests possible
+-- 2. The typeclass Ord 
+-- c) is a superclass of Eq
