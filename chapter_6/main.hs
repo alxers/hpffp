@@ -67,3 +67,7 @@ data EitherOr a b =
 -- c) makes equality tests possible
 -- 2. The typeclass Ord 
 -- c) is a superclass of Eq
+
+-- Does it typecheck?
+-- 1) No, function has no instance of Show
+-- 2) No, No instance for (Eq Mood) arising from a use of ‘==’ (Needs to have instance of Eq)
