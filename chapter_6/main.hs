@@ -71,3 +71,5 @@ data EitherOr a b =
 -- Does it typecheck?
 -- 1) No, function has no instance of Show
 -- 2) No, No instance for (Eq Mood) arising from a use of ‘==’ (Needs to have instance of Eq)
+-- 4) s1 = Sentence "dogs" "drool" doesn't work
+-- s2 = Sentence "Julie" "loves" "dogs" works fine
