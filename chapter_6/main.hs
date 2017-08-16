@@ -73,3 +73,9 @@ data EitherOr a b =
 -- 2) No, No instance for (Eq Mood) arising from a use of ‘==’ (Needs to have instance of Eq)
 -- 4) s1 = Sentence "dogs" "drool" doesn't work
 -- s2 = Sentence "Julie" "loves" "dogs" works fine
+
+-- Given a datatype declaration, what can we do?
+-- 1) phew = Papu "chases" True - doesn't work, misses data declaration
+-- 2) truth = Papu (Rocks "chomskydoz") (Yeah True) - works fine
+-- 3) equalityForall :: Papu -> Papu -> Bool; equalityForall p p' = p == p' does typecheck
+-- 4) comparePapus :: Papu -> Papu -> Bool; comparePapus p p' = p > p' doesn't typecheck, needs Ord
