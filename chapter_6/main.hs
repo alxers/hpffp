@@ -79,3 +79,7 @@ data EitherOr a b =
 -- 2) truth = Papu (Rocks "chomskydoz") (Yeah True) - works fine
 -- 3) equalityForall :: Papu -> Papu -> Bool; equalityForall p p' = p == p' does typecheck
 -- 4) comparePapus :: Papu -> Papu -> Bool; comparePapus p p' = p > p' doesn't typecheck, needs Ord
+
+-- Match the types
+-- 1) i :: a doesn't work. No instance for (Num a)
+-- 2) f :: Num a => a; f = 1.0. Doesn't work, has to be float.
