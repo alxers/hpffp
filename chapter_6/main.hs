@@ -82,4 +82,9 @@ data EitherOr a b =
 
 -- Match the types
 -- 1) i :: a doesn't work. No instance for (Num a)
--- 2) f :: Num a => a; f = 1.0. Doesn't work, has to be float.
+-- 2) f :: Num a => a; f = 1.0. Doesn't work, has to be float
+-- 3) f :: Fractional a => a; f = 1.0. Works fine
+-- 4) f :: RealFrac a => a; f = 1.0. Works fine
+-- 5) freud :: Ord a => a -> a; freud x = x. Works fine
+-- 6) freud' :: Int -> Int; freud' x = x. Works fine
+-- 7)
