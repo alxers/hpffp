@@ -87,4 +87,15 @@ data EitherOr a b =
 -- 4) f :: RealFrac a => a; f = 1.0. Works fine
 -- 5) freud :: Ord a => a -> a; freud x = x. Works fine
 -- 6) freud' :: Int -> Int; freud' x = x. Works fine
--- 7)
+-- 7) myX = 1 :: Int; sigmund :: a -> a; sigmund x = myX. Doesn't work
+-- 8) myX = 1 :: Int; sigmund' :: Num a => a -> a; sigmund' x = myX. Doesn't work
+-- Return value should be Int (not clear why, because Num is a typeclass for all numbers including integers)
+
+-- A typeclass is a sort of interface that defines some behavior. If a type is a part of a typeclass,
+-- that means that it supports and implements the behavior the typeclass describes.
+-- Num is a numeric typeclass.
+-- Int is a type.
+
+-- 9) 
+
+
