@@ -96,6 +96,17 @@ data EitherOr a b =
 -- Num is a numeric typeclass.
 -- Int is a type.
 
--- 9) 
+-- 9) jung :: [Int] -> Int; jung xs = head (sort xs). Works fine
+-- 10) young :: Ord a => [a] -> a; young xs = head (sort xs). Works fine
+-- 11) 
+--mySort :: [Char] -> [Char]
+--mySort = sort
+
+--signifier :: Ord a => [a] -> a
+--signifier xs = head (mySort xs)
+
+--Doesn't work. mySort is now constrained to only take and return [Char]
+
+
 
 
