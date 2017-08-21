@@ -107,6 +107,9 @@ data EitherOr a b =
 
 --Doesn't work. mySort is now constrained to only take and return [Char]
 
+-- Type-Kwon-Do
+-- 1) chk :: Eq b => (a -> b) -> a -> b -> Bool; chk a b c = True
+
 
 
 
