@@ -25,3 +25,13 @@ module Chapter7 where
 
 	-- c) mflip f = \x -> \y -> f y x
 		-- mflip f x y = f y x
+
+    -- Pattern matching
+    -- Intermission: Exercises
+    
+    -- 1. k (x, y) = x
+       -- k1 = k ((4-1), 10)
+       -- k2 = k ("three", (1 + 2))
+       -- k3 = k (3, True)
+       
+       -- Type of k is k :: (a, b) -> a
