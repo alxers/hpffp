@@ -34,4 +34,6 @@ module Chapter7 where
        -- k2 = k ("three", (1 + 2))
        -- k3 = k (3, True)
        
-       -- Type of k is k :: (a, b) -> a
+       -- a) Type of k is k :: (a, b) -> a
+       -- b) k2 :: [Char], not the same as k1 and k3
+       -- c) k3
