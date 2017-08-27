@@ -37,4 +37,9 @@ module Chapter7 where
        -- a) Type of k is k :: (a, b) -> a
        -- b) k2 :: [Char], not the same as k1 and k3
        -- c) k3
-       --
+    
+    -- 2. 
+	-- f :: (a, b, c) -> (d, e, f) -> ((a, d), (c, f))
+	-- f (a, b, c) (d, e, f) = ((a, d), (c, f))
+
+
